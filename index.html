@@ -1,0 +1,912 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portafolio Momito</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Chau+Philomene+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+    font-family: 'Chau Philomene One', sans-serif;
+    background-color: #A07BBB;
+    color: #FFFF;
+    margin: 0;
+    padding: 0;
+    /* Fondo de puntos blancos */
+    background-image: radial-gradient(#AB8BC3 3px, transparent 1px), radial-gradient(#FFEDF2 1px, transparent 1px);
+    background-position: 0 0, 25px 25px;
+    background-size: 50px 50px;
+}
+
+         body {
+    font-family: 'Chau Philomene One', sans-serif;
+    background-color: #A07BBB;
+    color: #4A235A;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #412F47;
+    padding: 20px;
+    position: fixed; /* Hace que la cabecera se mantenga fija */
+    top: 0; /* Fija la cabecera en la parte superior */
+    width: 100%; /* Ancho completo */
+    z-index: 100; /* Asegura que la cabecera esté por encima de otros elementos */
+}
+
+nav {
+    display: flex;
+    justify-content: space-between; /* Alinea los elementos a los extremos */
+    align-items: center; /* Centra verticalmente los elementos */
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    margin-left: 20px; /* Espacio entre los elementos de navegación */
+}
+
+#scrollToTopButton img {
+    width: 30px; /* Ancho deseado */
+    height: auto; /* Altura ajustada automáticamente para mantener la proporción */
+    margin-left: auto; /* Empuja el botón del inicio hacia la derecha */
+}
+
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: flex-start; /* Alinea el contenido a la derecha */
+}
+
+nav li {
+    margin-left: 20px;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    text-size-adjust: 30;
+}
+
+
+main {
+    padding: 50px;
+}
+
+.hero {
+    width: 100%; /* Abarca todo el ancho disponible */
+}
+
+
+.hero-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 40px;
+    width: 100%; /* Abarca todo el ancho disponible */
+}
+
+.hero img {
+    width: 100%;
+    height: auto;
+    display: block;
+    /* Agrega estilos adicionales según tus preferencias */
+}
+
+.info h2 {
+    font-family: 'Chau Philomene One', sans-serif;
+    font-size: 42px;
+    margin-top: 0;
+    margin-bottom: 50px;
+    
+    
+}
+
+.info p {
+    font-size: 18px;
+    margin-top: 0;
+}
+
+.hero h1 {
+    font-family: 'Chau Philomene One', sans-serif;
+    font-size: 150px;
+}
+/* Estilo para la sección Acerca de Mí */
+.about {
+    background-color: #F7D3DD; /* Color de fondo del rectángulo */
+    padding: 50px; /* Espacio alrededor del contenido */
+    margin-top: 50px; /* Separación hacia abajo */
+    
+}
+
+/* Contenedor para la imagen y la información */
+.about-container {
+    display: flex;
+    align-items: center;
+}
+
+/* Estilo para la imagen */
+.about-image img {
+    max-width: 400px; /* Tamaño máximo de la imagen */
+    border-radius: 50%; /* Forma redonda para la imagen */
+    margin-right: 30px; /* Espacio entre la imagen y la información */
+}
+
+/* Estilo para la información */
+.about-info {
+    flex: 1; /* La información ocupará el espacio restante */
+}
+
+.about-info h2 {
+    font-size: 40px;
+    margin-bottom: 20px; /* Espacio entre el título y el párrafo */
+}
+
+.about-info p {
+    font-size: 27px;
+    line-height: 1.6; /* Espaciado entre líneas del párrafo */
+}
+.about-2 {
+    background-color: #F7D3DD; /* Color de fondo del rectángulo */
+    padding: 50px; /* Espacio alrededor del contenido */
+    margin-bottom: 50px;
+}
+
+/* Estilo para las columnas de la sección Acerca de mí */
+.about-columns {
+    display: flex;
+    justify-content: space-between;
+}
+
+.about-column {
+    width: 30%; /* Ancho de cada columna */
+}
+
+/* Estilo para el rectángulo de fondo de cada columna */
+.about-box {
+    background-color: #A07BBB; /* Color de fondo del rectángulo */
+    padding: 20px; /* Espacio interno del rectángulo */
+    border-radius: 10px; /* Bordes redondeados del rectángulo */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra suave del rectángulo */
+}
+
+/* Estilo para las imágenes */
+.about-box img {
+    max-width: 100%; /* Ajusta el ancho máximo de la imagen */
+    height: auto;
+    border-radius: 10px; /* Bordes redondeados para las imágenes */
+}
+
+/* Estilo para los títulos de las columnas */
+.about-box h3 {
+    font-size: 24px; /* Tamaño de la tipografía */
+}
+
+
+
+
+/* Estilo para la sección Ilustración */
+.illustration {
+    background-color: #F7D3DD; /* Color de fondo del rectángulo */
+    padding: 50px; /* Espacio alrededor del contenido */
+}
+
+/* Contenedor para la información y la galería de ilustraciones */
+.illustration-container {
+    display: flex;
+    flex-direction: column; /* Apila los elementos verticalmente */
+    align-items: center;
+}
+
+/* Estilo para la información */
+.illustration-info {
+    text-align: center;
+    margin-bottom: 40px; /* Espacio entre la información y la galería */
+}
+
+.illustration-info h2 {
+    font-size: 40px;
+    margin-bottom: 20px; /* Espacio entre el título y el párrafo */
+}
+
+.illustration-info p {
+    font-size: 18px;
+    line-height: 1.6; /* Espaciado entre líneas del párrafo */
+}
+
+/* Estilo para la galería de ilustraciones */
+.illustration-item {
+    text-align: center;
+    transition: transform 0.3s ease; /* Agrega una transición suave */
+}
+
+.illustration-item:hover {
+    transform: scale(1.1); /* Agranda la imagen al pasar el cursor */
+}
+.illustration-gallery {
+    display: flex;
+    justify-content: center;
+    gap: 40px; /* Espacio entre las ilustraciones */
+}
+
+/* Estilo para cada ilustración */
+.illustration-item {
+    text-align: center;
+}
+
+.illustration-item img {
+    max-width: 100%;
+    border-radius: 5px; /* Bordes redondeados para las imágenes */
+}
+
+.illustration-item h3 {
+    margin-top: 20px; /* Espacio entre la imagen y el título */
+    margin-bottom: 10px; /* Espacio entre el título y el párrafo */
+}
+
+.illustration-item p {
+    font-size: 16px;
+}
+
+/* Estilo para el modal */
+.modal {
+    display: none; /* Oculta el modal por defecto */
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7); /* Fondo semi-transparente */
+    overflow: auto;
+}
+
+/* Estilo para la imagen dentro del modal */
+.modal-content {
+    display: block;
+    margin: auto;
+    max-width: 80%; /* Ajusta el tamaño máximo de la imagen */
+    max-height: 80vh; /* Ajusta la altura máxima de la imagen */
+}
+
+/* Estilo para el botón de cierre del modal */
+.close {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    font-size: 30px;
+    cursor: pointer;
+    color: #fff;
+}
+
+/* Estilo para la sección Animación */
+.animation {
+    background-color: #F7D3DD; /* Color de fondo del rectángulo */
+    padding: 50px; /* Espacio alrededor del contenido */
+    margin-top: 50px; /* Separación hacia arriba */
+}
+
+/* Contenedor para la información y la galería de animaciones */
+.animation-container {
+    display: flex;
+    flex-direction: column; /* Apila los elementos verticalmente */
+    align-items: center;
+}
+
+/* Estilo para la información */
+.animation-info {
+    text-align: center;
+    margin-bottom: 40px; /* Espacio entre la información y la galería */
+}
+
+.animation-info h2 {
+    font-size: 40px;
+    margin-bottom: 20px; /* Espacio entre el título y el párrafo */
+}
+
+.animation-info p {
+    font-size: 18px;
+    line-height: 1.6; /* Espaciado entre líneas del párrafo */
+}
+
+/* Estilo para la galería de animaciones */
+.animation-gallery {
+    display: flex;
+    justify-content: center;
+    gap: 40px; /* Espacio entre las animaciones */
+}
+
+/* Estilo para cada animación */
+.animation-item {
+    text-align: center;
+}
+
+.animation-item img {
+    max-width: 100%;
+    border-radius: 5px; /* Bordes redondeados para las imágenes */
+}
+
+.animation-item h3 {
+    margin-top: 20px; /* Espacio entre la imagen y el título */
+    margin-bottom: 10px; /* Espacio entre el título y el párrafo */
+}
+
+.animation-item p {
+    font-size: 16px;
+}
+
+
+/* Estilo para la sección Cartel */
+.poster {
+    background-color: #F7D3DD; /* Color de fondo del rectángulo */
+    padding: 50px; /* Espacio alrededor del contenido */
+    margin-top: 50px; /* Separación hacia arriba */
+}
+
+/* Contenedor para la información y la galería de carteles */
+.poster-container {
+    display: flex;
+    flex-direction: column; /* Apila los elementos verticalmente */
+    align-items: center;
+}
+
+/* Estilo para la información */
+.poster-info {
+    text-align: center;
+    margin-bottom: 40px; /* Espacio entre la información y la galería */
+}
+
+.poster-info h2 {
+    font-size: 40px;
+    margin-bottom: 20px; /* Espacio entre el título y el párrafo */
+}
+
+.poster-info p {
+    font-size: 18px;
+    line-height: 1.6; /* Espaciado entre líneas del párrafo */
+}
+
+/* Estilo para la galería de carteles */
+.poster-gallery {
+    display: flex;
+    flex-wrap: wrap; /* Permite que los elementos se envuelvan en filas */
+    justify-content: space-between; /* Distribuye el espacio sobrante entre las filas */
+    gap: 10px; /* Espacio entre los carteles */
+}
+
+/* Estilo para cada cartel */
+.poster-item {
+    text-align: center;
+    width: calc(33.33% - 20px); /* Ancho fijo para cada cartel (33.33% del ancho total menos el espacio entre los carteles) */
+    margin-bottom: 10px; /* Espacio entre las filas de carteles */
+}
+
+.poster-item img {
+    max-width: 100%; /* Ajusta el ancho máximo de la imagen al ancho del cartel */
+    height: auto;
+    border-radius: 5px; /* Bordes redondeados para las imágenes */
+    transition: transform 0.3s ease; /* Agrega una transición suave al agrandamiento */
+}
+
+.poster-item:hover img {
+    transform: scale(1.1); /* Aumenta ligeramente el tamaño de la imagen al pasar el cursor */
+}
+
+/* Estilo para el modal */
+.modal {
+    display: none; /* Oculta el modal por defecto */
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7); /* Fondo semi-transparente */
+    overflow: auto;
+}
+
+/* Estilo para la imagen dentro del modal */
+.modal-content {
+    display: block;
+    margin: auto;
+    max-width: 80%; /* Ajusta el tamaño máximo de la imagen */
+    max-height: 80vh; /* Ajusta la altura máxima de la imagen */
+}
+
+/* Estilo para el botón de cierre del modal */
+.close {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    font-size: 30px;
+    cursor: pointer;
+    color: #fff;
+}
+
+.editing {
+background-color: #F7D3DD; /* Color de fondo del rectángulo */
+    padding: 50px; /* Espacio alrededor del contenido */
+    margin-top: 50px; /* Separación hacia arriba */
+}
+
+/* Estilo para la información de la sección de edición */
+.editing-info {
+    text-align: center; /* Centra el contenido horizontalmente */
+    font-size: 18px;
+    line-height: 1.6; /* Espaciado entre líneas del párrafo */
+}
+
+/* Estilo para la galería de trabajos de edición */
+.editing-gallery {
+    display: flex;
+    flex-wrap: wrap; /* Permite que los elementos se envuelvan en filas */
+    justify-content: space-between; /* Distribuye el espacio sobrante entre las filas */
+    gap: 10px; /* Espacio entre los trabajos de edición */
+}
+
+/* Estilo para cada trabajo de edición */
+.editing-item {
+    text-align: center;
+    width: calc(33.33% - 20px); /* Ancho fijo para cada trabajo de edición (33.33% del ancho total menos el espacio entre los trabajos de edición) */
+    margin-bottom: 40px; /* Espacio entre las filas de trabajos de edición */
+    position: relative; /* Establece una posición relativa para los trabajos de edición */
+}
+
+.editing-item img {
+    max-width: 100%; /* Ajusta el ancho máximo de la imagen al ancho del trabajo de edición */
+    height: auto;
+    border-radius: 5px; /* Bordes redondeados para las imágenes */
+    transition: transform 0.3s ease; /* Agrega una transición suave al agrandamiento */
+}
+
+.editing-item:hover img {
+    transform: scale(1.1); /* Aumenta ligeramente el tamaño de la imagen al pasar el cursor */
+}
+
+
+/* Estilo para la sección de contacto */
+.contact {
+    background-color: #F0D4DD;
+    padding: 50px 0;
+    text-align: center;
+    margin-top: 50px;
+}
+
+/* Estilo para el contenedor de la sección de contacto */
+.contact-container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* Estilo para la información de contacto */
+.contact-info {
+    margin-bottom: 40px;
+}
+
+.contact-info h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+.contact-info p {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+/* Estilo para la lista de contactos */
+.contact-list {
+    list-style: none;
+    padding: 0;
+}
+
+.contact-list li {
+    margin-bottom: 10px;
+}
+
+.contact-list a {
+    text-decoration: none;
+    color: #4A235A;
+    font-weight: bold;
+    font-size: 20px;
+    transition: color 0.3s ease;
+}
+
+.contact-list a:hover {
+    color: #612C61;
+}
+
+.index-container {
+    background-color: #F7D3DD; /* Color de fondo */
+    padding: 20px; /* Espacio interno */
+    border-radius: 10px; /* Bordes redondeados */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    text-align: center;
+    font-size: 40px;
+}
+
+/* Agrega estilos adicionales según tus preferencias */
+.index-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.index-buttons a {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    text-decoration: none;
+    color: #333;
+    transition: transform 0.3s ease;
+}
+
+.index-buttons a:hover {
+    transform: translateY(-5px);
+}
+
+.index-buttons img {
+    width: 200px;
+    height: auto;
+}
+
+.index-buttons p {
+    margin-top: 5px;
+}
+
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#index">Índice</a></li>
+                <li><a href="#about">Acerca de mí</a></li>
+                <li><a href="#contact">Contacto</a></li>
+            
+            <a href="#scrollToTopButton" id="scrollToTopButton"><img src="Momito.png" alt="Botón Ir Arriba"></a>
+        </ul>
+        </nav>
+    </header>
+    
+    <main>
+        <div class="hero">
+            <img src="PORTAFOLIO WEB.png" alt="Ilustración personalizada">
+            <div class="hero-content">
+                <!-- Aquí puedes agregar más contenido si lo deseas -->
+            </div>
+        </div>
+        
+        
+        <section id="index" class="index">
+            <div class="index-container">
+                <h2>Índice</h2>
+                <div class="index-buttons">
+                <a href="#illustration">
+                    <img src="imagenes/Momito/ilustracion.png" alt="Ilustración">
+                    <p>lustración</p>
+                </a>
+                <!-- Agrega iconos, estilos y descripciones para otras secciones -->
+                <a href="#animation">
+                    <img src="imagenes/Momito/animacion.png" alt="Animación">
+                    <p>Animación</p>
+                </a>
+                <a href="#poster">
+                    <img src="imagenes/Momito/cartel.png" alt="Cartel">
+                    <p>Cartel</p>
+                </a>
+                <a href="#editing">
+                    <img src="imagenes/Momito/edicion.png" alt="Edición">
+                    <p>Edición</p>
+                </a>
+            </div>
+        </section>
+        
+
+
+            <section id="about" class="about">
+    <div class="about-container">
+        <div class="about-image">
+            <img src="imagenes/foto_yo.JPG" alt="Tu Foto">
+        </div>
+        <div class="about-info">
+            <h2>Acerca de mí</h2>
+            <p>¡Hola! Soy Monserrat Mondragón, mejor conocida como Momito, una apasionada diseñadora gráfica, ilustradora y estudiante. Busco especializarme en la ilustración y animación; sin embargo, manejo otras áreas como lo es la edición de fotos y diseño editorial.</p>
+            <!-- Puedes agregar más información sobre ti aquí -->
+        </div>
+    </div>
+</section>
+
+<section id="about-2" class="about-2">
+    <div class="about-container">
+        <div class="about-info">
+            <div class="about-columns">
+                <div class="about-column">
+                    <div class="about-box">
+                        <h3>Educación</h3>
+                        <img src="imagenes/educacion.png" alt="Educación">
+                    </div>
+                </div>
+                <div class="about-column">
+                    <div class="about-box">
+                        <h3>Intereses</h3>
+                        <img src="imagenes/interes.png" alt="Intereses">
+                    </div>
+                </div>
+                <div class="about-column">
+                    <div class="about-box">
+                        <h3>Software</h3>
+                        <img src="imagenes/software.png" alt="Software">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+
+
+<section id="illustration" class="illustration">
+    <div class="illustration-container">
+        <div class="illustration-info">
+            <h2>Ilustración</h2>
+            <p>La mayor parte de mi vida he dibujado y amo hacerlo. Estoy desarrollando un estilo único que me permita ser reconocida como sello de mi persona.
+
+                He hecho diversos trabajos de ilustración, ya sea de manera personal, académica y de comisión para otras personas.</p>
+        </div>
+        <div class="illustration-gallery">
+            <!-- Aquí se mostrarán las ilustraciones -->
+            <div class="illustration-item">
+                <img src="imagenes/ilustracion/ilustracion_1.png" alt="Ilustración 1">
+                <h3>Pavitr y Oc</h3>
+                <p>Comisión personalizada.</p>
+            </div>
+            <div class="illustration-item">
+                <img src="imagenes/ilustracion/ilustracion_2.png" alt="Ilustración 2">
+                <h3>Spider-Punk</h3>
+                <p>Fanart.</p>
+            </div>
+            <div class="illustration-item">
+                <img src="imagenes/ilustracion/ilustracion_3.png" alt="Ilustración 3">
+                <h3>Lecciones de Eric</h3>
+                <p>Ilustraciones con fines de entretenimiento.</p>
+        </div>
+        <div class="illustration-item">
+            <img src="imagenes/ilustracion/ilustracion_4.png" alt="Ilustración 4">
+            <h3>Comic Momo</h3>
+            <p>Trabajo escolar.</p>
+        </div>
+        <div class="illustration-item">
+            <img src="imagenes/ilustracion/ilustracion_5.png" alt="Ilustración 5">
+            <h3>Piratas</h3>
+            <p>Ilustraciones con fines de entretenimiento.</p>
+        </div>
+        <div class="illustration-item">
+            <img src="imagenes/ilustracion/ilustracion_7.png" alt="Ilustración 7">
+            <h3>Día de picnic</h3>
+            <p>Ilustraciones con fines de entretenimiento.</p>
+        
+    </div>
+</section>
+
+<section id="animation" class="animation">
+    <div class="animation-container">
+        <div class="animation-info">
+            <h2>Animación</h2>
+            <p>La animación ha sido parte de mi vida desde que tengo memoria, sobretodo por las películas y series de mi infancia. Soy una fanática de los trabajos animados de todos los géneros, pero tengo un gusto en particular por la animación tradicional. 
+
+                Los trabajos de animación que he realizado han sido, en su mayoría, personales y algunos académicos.</p>
+        </div>
+        <div class="animation-gallery">
+            <!-- Aquí se mostrarán las animaciones -->
+            <div class="animation-item">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/r6GRMN1QkA4?si=tKpJgpWgXEvVH5zg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                <h3>Rocostopía</h3>
+                <p>Trabajo escolar para video musical.</p>
+            <div class="animation-item">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/6rZsFo4tNAM?si=hQn8w1vzW_1Ok_LN" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                <h3>Ojo</h3>
+                <p>Trabajo escolar que narra una historia corta.</p>
+            <div class="animation-item">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/videoseries?si=FcqoGWpWISETkfbj&amp;list=PLmr6LKIp6-tmZ15ARcOhhIgEfQeRX8Spz" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                <h3>Playlist - Animación</h3>
+                <p>Recopilación de animaciones cortas.</p>
+        </div>
+    </div>
+</section>
+
+<section id="poster" class="poster">
+    <div class="poster-container">
+        <div class="poster-info">
+            <h2>Cartel</h2>
+            <p>Comunicar una idea de manera rápida es una de las cualidades en el diseño gráfico, y eso he tenido claro a la hora de hacer carteles.
+
+                Desde promocionar un espectáculo hasta un libro, el diseño de cartel es una de las áreas que más disfruto hacer.</p>
+        </div>
+        <div class="poster-gallery">
+            <!-- Aquí se mostrarán los carteles -->
+            <div class="poster-item">
+                <img src="imagenes/cartel/Crema batida.png" alt="Cartel 1">
+                <h3>Promocional Boing</h3>
+                <p>Parte de una línea de productos Boing.</p>
+            </div>
+            <div class="poster-item">
+                <img src="imagenes/cartel/Publicidad1.png" alt="Cartel 2">
+                <h3>Promocional Boing</h3>
+                <p>Parte de una línea de productos Boing.</p>
+            </div>
+            <div class="poster-item">
+                <img src="imagenes/cartel/Salsa BBQ.png" alt="Cartel 3">
+                <h3>Promocional Boing</h3>
+                <p>Parte de una línea de productos Boing.</p>
+            </div>
+           
+        <div class="poster-item">
+            <img src="imagenes/cartel/WhatsApp Image 2024-02-28 at 1.51.36 AM.jpeg" alt="Cartel 4">
+            <h3>Poster de película</h3>
+            <p>Trabajo escolar de espectacular.</p>
+        </div>
+        <div class="poster-item">
+        <img src="imagenes/cartel/Espectacular_Morado.png" alt="Cartel 5">
+        <h3>Promocional Sello Rojo</h3>
+        <p>Parte de una línea de Sello Rojo.</p>
+    </div>
+    <div class="poster-item">
+        <img src="imagenes/cartel/Linea_Deslactosada.png" alt="Cartel 6">
+        <h3>Promocional Sello Rojo</h3>
+        <p>Parte de una línea de Sello Rojo.</p>
+    </div> 
+        <div class="poster-item">
+            <img src="imagenes/cartel/Captura de pantalla 2024-03-05 a la(s) 0.55.49.png" alt="Cartel 2">
+            <h3>ProteGOG!</h3>
+            <p>Promocional para carnazas de perro.</p>
+    </div>
+    
+    <div class="poster-item">
+        <img src="imagenes/cartel/Anuncio_Libro.png" alt="Cartel 2">
+        <h3>Sobreviviendo en la granja</h3>
+        <p>Promocional de libro.</p>
+    </div>
+    
+    <div class="poster-item">
+                <img src="imagenes/cartel/WhatsApp Image 2024-01-23 at 1.00.38 AM.jpeg" alt="Cartel 2">
+                <h3>Restaurante Tauro</h3>
+                <p>Menú para el restaurante "TAURO".</p>
+            </div>
+</div>
+</section>
+
+<section id="editing" class="editing">
+    <div class="editing-container">
+        <div class="editing-info">
+            <h2>Edición</h2>
+            <p>Crear nuevos conceptos a través de elementos que de tu preferencia ha sido de las cosas que más he disfrutado a la hora de hacer ediciones de fotos.
+
+                La mayor parte de estos trabajos han sido escolares,  donde me permitieron colocar mi esencia en cada uno de ellos.</p>
+        </div>
+        <div class="editing-gallery">
+            <!-- Aquí se mostrarán los trabajos de edición -->
+            <div class="editing-item">
+                <img src="imagenes/edicion/edicion_1.png" alt="Edición 1">
+                <h3>Sparda</h3>
+                <p>Edición inspirada en el videojuego Devil May Cry.</p>
+            </div>
+            <div class="editing-item">
+                <img src="imagenes/edicion/edicion_2.png" alt="Edición 2">
+                <h3>La suerte te llevó a la muerte</h3>
+                <p>Edición inspirada en una carta de azar.</p>
+            </div>
+            <div class="editing-item">
+                <img src="imagenes/edicion/edicion_3.png" alt="Edición 3">
+                <h3>Ghost</h3>
+                <p>Edición inspirada en la banda Ghost.</p>
+        </div>
+    </div>
+</section>
+
+<section id="contact" class="contact">
+    <div class="contact-container">
+        <div class="contact-info">
+            <h2>Contacto</h2>
+            <p>Ponte en contacto conmigo a través de los siguientes medios:</p>
+            <ul class="contact-list">
+                <li><a href="https://wa.me/5513798175">WhatsApp</a></li>
+                <li><a href="mailto:diseños_momito@gmail.com">Correo Electrónico</a></li>
+                <li><a href="https://www.facebook.com/MomoUnu">Facebook</a></li>
+                <li><a href="https://www.instagram.com/i-degrinald">Instagram</a></li>
+            </ul>
+        </div>
+    </div>
+</section>
+
+    
+    
+            
+       
+    </script>
+</body>
+</html>
+<!-- Elemento modal -->
+<div id="modal" class="modal">
+    <span class="close">&times;</span>
+    <img class="modal-content" id="modal-img">
+</div>
+
+<script>
+    // Obtiene el modal y la imagen dentro de él
+    var modal = document.getElementById('modal');
+    var modalImg = document.getElementById('modal-img');
+    
+    // Obtiene todas las imágenes de la galería
+    var images = document.querySelectorAll('.illustration-item img');
+    
+    // Agrega un evento de clic a cada imagen de la galería
+    images.forEach(function(image) {
+        image.addEventListener('click', function() {
+            modal.style.display = 'block'; // Muestra el modal
+            modalImg.src = this.src; // Muestra la imagen clicada dentro del modal
+        });
+    });
+    
+    // Cierra el modal cuando se hace clic en el botón de cierre (X)
+    var closeBtn = document.querySelector('.close');
+    closeBtn.addEventListener('click', function() {
+        modal.style.display = 'none'; // Oculta el modal
+    });
+
+    // Obtiene el modal y la imagen dentro de él
+var modal = document.getElementById('modal');
+var modalImg = document.getElementById('modal-img');
+
+// Obtiene todas las imágenes de la galería de carteles
+var images = document.querySelectorAll('.poster-item img');
+
+// Agrega un evento de clic a cada imagen de la galería de carteles
+images.forEach(function(image) {
+    image.addEventListener('click', function() {
+        modal.style.display = 'block'; // Muestra el modal
+        modalImg.src = this.src; // Muestra la imagen clicada dentro del modal
+    });
+});
+
+// Cierra el modal cuando se hace clic en el botón de cierre (X)
+var closeBtn = document.querySelector('.close');
+closeBtn.addEventListener('click', function() {
+    modal.style.display = 'none'; // Oculta el modal
+});
+
+// Obtiene todas las imágenes de la galería de trabajos de edición
+var editingImages = document.querySelectorAll('.editing-item img');
+
+// Agrega un evento de clic a cada imagen de la galería de trabajos de edición
+editingImages.forEach(function(image) {
+    image.addEventListener('click', function() {
+        modal.style.display = 'block'; // Muestra el modal
+        modalImg.src = this.src; // Muestra la imagen clicada dentro del modal
+    });
+});
+
+document.getElementById('scrollToTopButton').addEventListener('click', function() {
+    window.scrollTo({
+        top: 0,
+        behavior: 'smooth'
+    });
+});
+
+
+    </script>
